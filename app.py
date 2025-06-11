@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import joblib
-from modelSV import OnevsOneSVM
+from modelSV import *
 
 def load_model_and_scaler(model_path, scalerFeature_path, transformFeature_path, transformTarget_path):
     model = joblib.load(model_path)
