@@ -12,7 +12,7 @@ def load_model_and_scaler(model_path, scalerFeature_path, transformFeature_path,
     le_T = joblib.load(transformTarget_path)
     return model, scaler, le_F, le_T
 
-st.title("Prediksi dengan Model One-vs-One SVM")
+st.title("Prediksi Jenis Anomali Dalam Lalu Lintas Jaringan")
 st.write("Upload File Test (Format TXT atau CSV)")
 
 uploaded_file = st.file_uploader("Pilih file CSV atau TXT", type=["csv", "txt"])
